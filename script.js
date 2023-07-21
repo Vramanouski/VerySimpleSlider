@@ -18,12 +18,12 @@ const changePicture = function (e) {
 
 const slideLeft = function () {
   currentPicNumber == 1 ? (currentPicNumber = 4) : currentPicNumber--;
-  imgSlider.src = `/../00${currentPicNumber}.jpeg`;
+  imgSlider.src = `img/00${currentPicNumber}.jpeg`;
 };
 
 const slideRight = function () {
   currentPicNumber == 4 ? (currentPicNumber = 1) : currentPicNumber++;
-  imgSlider.src = `/../00${currentPicNumber}.jpeg`;
+  imgSlider.src = `img/00${currentPicNumber}.jpeg`;
 };
 
 slider.addEventListener("click", changePicture);
